@@ -230,36 +230,3 @@ $(document).ready(function () {
       
 })
 
-$(function() {
-
-    let selectedClass = "";
-    let gallery = $('.container-gallery');
-    let loadMore = $('.load-more2');
-
-    $(".filter").click(function(){
-        $(".filter").removeClass("portfolio-active");
-
-        $(this).addClass("portfolio-active");
-        selectedClass = $(this).attr("data-rel");
-
-        $(".container-gallery div").fadeOut().removeClass('scale-anm');
-        setTimeout(function() {
-            $("."+selectedClass).fadeIn().addClass('scale-anm');
-        }, 300);
-        if($("."+selectedClass).length > 12){
-
-            $(loadMore).css("display","block");
-            $(gallery).css('max-height','1100px');
-            $(".NoContent").first().css("display","none")
-        }else {
-            $(loadMore).css("display","none");
-            $(".NoContent").first().css("display","block")
-        }
-    });
-
-    $(loadMore).click(function() {
-        let maxHeight = $(gallery).css('max-height');
-        $(gallery).css('max-height', "+=1100px");
-
-    });
-});
