@@ -1,13 +1,12 @@
 $(document).ready(function () {
 
-    //////////////SERVICE-BLOCK-CODE
+
     let arrow = $('.down');
     $(arrow).first().css('display', 'inline-block');
     $('.service-item').click(function (e) {
         $('.service-item').removeClass('service-active');
         $(e.target).addClass('service-active');
         let index = $('.service-item').index(this);
-        debugger;
         let img = $('.service-img');
         let text = $('.service-text');
 
@@ -17,8 +16,8 @@ $(document).ready(function () {
             'color': '#717171'
         });
 
-        switch (true) {
-            case (index === 0):
+        switch (index) {
+            case (0):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
@@ -27,7 +26,7 @@ $(document).ready(function () {
                 $(img).attr('src', 'img/web design/wb1.png');
                 $(text).text('Corporis, cumque cupiditate debitis delectus deleniti est expedita harum ipsa laboriosam, modi numquam officia pariatur perferendis possimus quam qui quisquam rem sit ullam unde vero voluptas voluptatem. Ab accusamus accusantium, simos distinctio doloremque libero nulla repudiandae sunt vero voluptatibus voluptatum? Consequatur debitis dignissimos, dolores dolorum eos, et excepturi iendis sint soluta ut vero, voluptate, voluptatibus voluptatum? A, amet debitis dolorem iure quod sapiente suscipit! Assumenda culpa, cupiditate distinctio doloribus eveniet fugit impedit ipsam ipsum, modi nam necessitatibus quae repellat sit vero vitae? Adipisci, beatae est exercitationem laboriosam odit sit.');
                 break;
-            case (index === 1):
+            case (1):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
@@ -36,7 +35,7 @@ $(document).ready(function () {
                 $(img).attr('src', 'img/web design/wb2.jpg' );
                 $(text).text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus quia voluptatem corrupti quaerat, esse quidem alias nostrum dignissimos iste praesentium deleniti, non numquam magni nam nesciunt, soluta quasi libero veniam! Rem hic doloribus eveniet blanditiis corporis perspiciatis ratione quaerat.');
                 break;
-            case (index === 2):
+            case (2):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
@@ -45,7 +44,7 @@ $(document).ready(function () {
                 $(img).attr('src', 'img/web design/wb3.jpg');
                 $(text).text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quis nulla totam, nihil, voluptas omnis vel facilis veniam perferendis doloremque ipsa adipisci voluptatibus distinctio ex esse. Saepe minima quidem, perspiciatis unde molestiae nobis, quo dolor voluptatibus, obcaecati, quam suscipit itaque nam error laboriosam dolorum laudantium sit voluptatem. Eaque veritatis ipsam blanditiis possimus eos doloremque adipisci, eius, totam natus illum, vitae mollitia non iure! Aperiam facere, harum, delectus doloribus cumque, dignissimos incidunt dolorem alias sit, at nostrum enim. Cum optio doloremque quos earum labore, ea rerum inventore, minus delectus dolores quod!');
                 break;
-            case (index === 3):
+            case (3):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
@@ -54,7 +53,7 @@ $(document).ready(function () {
                 $(img).attr('src', 'img/web design/wb4.jpg');
                 $(text).text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus doloribus nam, provident unde delectus architecto perspiciatis sunt eius! Amet repudiandae quae et quod voluptates sequi culpa modi sit dolor quisquam praesentium beatae repellendus officia enim, maxime, saepe blanditiis facilis omnis placeat necessitatibus. Sit deleniti reiciendis labore quasi sequi dolorem, qui neque non officia suscipit obcaecati expedita rem enim, porro? Commodi hic quia, unde deleniti? Neque, nostrum amet dolor maxime esse quibusdam iste, doloribus repellendus magni vero, ad aspernatur blanditiis voluptas!');
                 break;
-            case (index === 4):
+            case (4):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
@@ -63,7 +62,7 @@ $(document).ready(function () {
                 $(img).attr('src', 'img/web design/wb1.png');
                 $(text).text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aspernatur autem magni reprehenderit, libero, officia deserunt quidem nesciunt modi eaque inventore laboriosam enim voluptate, laborum! Necessitatibus dolor ducimus, quaerat totam quod quis! Et ducimus est dignissimos quia sequi quisquam, unde obcaecati ut delectus accusamus asperiores optio quis exercitationem impedit autem iste incidunt, nemo fugit. Fugit similique esse exercitationem autem, earum laudantium eius, provident dolorum cum ab delectus quod eum voluptatem iste dolores illum odit impedit quasi eos adipisci voluptatum omnis. Fuga explicabo magni, error odio nulla?');
                 break;
-            case (index === 5):
+            case (5):
                 $(this).find(arrow).css("display", "inline-block");
                 $(this).css({
                     'backgroundColor': '#18cfab',
